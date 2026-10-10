@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightBurnProject AppVersion="1.7.08" FormatVersion="1" MaterialHeight="4" MirrorX="False" MirrorY="False">
+    <CutSetting type="Cut">
+        <index Value="0"/>
+        <name Value="Sheet 1"/>
+        <minPower Value="100"/>
+        <maxPower Value="100"/>
+        <maxPower2 Value="100"/>
+        <speed Value="8"/>
+        <numPasses Value="1"/>
+        <kerf Value="0.1"/>
+        <priority Value="0"/>
+    </CutSetting>
+    <Shape Type="Path" CutIndex="0" VertID="0" PrimID="0">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V10 28.571c0x1c1x1V14 28.571c0x1c1x1V14 14c0x1c1x1V28.571 14c0x1c1x1V28.571 10c0x1c1x1V43.143 10c0x1c1x1V43.143 14c0x1c1x1V57.714 14c0x1c1x1V57.714 10c0x1c1x1V72.286 10c0x1c1x1V72.286 14c0x1c1x1V86.857 14c0x1c1x1V86.857 10c0x1c1x1V101.429 10c0x1c1x1V101.429 14c0x1c1x1V116 14c0x1c1x1V116 28.571c0x1c1x1V120 28.571c0x1c1x1V120 43.143c0x1c1x1V116 43.143c0x1c1x1V116 57.714c0x1c1x1V120 57.714c0x1c1x1V120 72.286c0x1c1x1V116 72.286c0x1c1x1V116 86.857c0x1c1x1V120 86.857c0x1c1x1V120 101.429c0x1c1x1V116 101.429c0x1c1x1V116 116c0x1c1x1V101.429 116c0x1c1x1V101.429 120c0x1c1x1V86.857 120c0x1c1x1V86.857 116c0x1c1x1V72.286 116c0x1c1x1V72.286 120c0x1c1x1V57.714 120c0x1c1x1V57.714 116c0x1c1x1V43.143 116c0x1c1x1V43.143 120c0x1c1x1V28.571 120c0x1c1x1V28.571 116c0x1c1x1V14 116c0x1c1x1V14 101.429c0x1c1x1V10 101.429c0x1c1x1V10 86.857c0x1c1x1V14 86.857c0x1c1x1V14 72.286c0x1c1x1V10 72.286c0x1c1x1V10 57.714c0x1c1x1V14 57.714c0x1c1x1V14 43.143c0x1c1x1V10 43.143c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="1" PrimID="1">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V124 10c0x1c1x1V142.571 10c0x1c1x1V142.571 14c0x1c1x1V157.143 14c0x1c1x1V157.143 10c0x1c1x1V171.714 10c0x1c1x1V171.714 14c0x1c1x1V186.286 14c0x1c1x1V186.286 10c0x1c1x1V200.857 10c0x1c1x1V200.857 14c0x1c1x1V215.429 14c0x1c1x1V215.429 10c0x1c1x1V234 10c0x1c1x1V234 22c0x1c1x1V230 22c0x1c1x1V230 34c0x1c1x1V234 34c0x1c1x1V234 46c0x1c1x1V230 46c0x1c1x1V230 58c0x1c1x1V234 58c0x1c1x1V234 70c0x1c1x1V124 70c0x1c1x1V124 58c0x1c1x1V128 58c0x1c1x1V128 46c0x1c1x1V124 46c0x1c1x1V124 34c0x1c1x1V128 34c0x1c1x1V128 22c0x1c1x1V124 22c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="2" PrimID="2">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V238 10c0x1c1x1V256.571 10c0x1c1x1V256.571 14c0x1c1x1V271.143 14c0x1c1x1V271.143 10c0x1c1x1V285.714 10c0x1c1x1V285.714 14c0x1c1x1V300.286 14c0x1c1x1V300.286 10c0x1c1x1V314.857 10c0x1c1x1V314.857 14c0x1c1x1V329.429 14c0x1c1x1V329.429 10c0x1c1x1V348 10c0x1c1x1V348 22c0x1c1x1V344 22c0x1c1x1V344 34c0x1c1x1V348 34c0x1c1x1V348 46c0x1c1x1V344 46c0x1c1x1V344 58c0x1c1x1V348 58c0x1c1x1V348 70c0x1c1x1V238 70c0x1c1x1V238 58c0x1c1x1V242 58c0x1c1x1V242 46c0x1c1x1V238 46c0x1c1x1V238 34c0x1c1x1V242 34c0x1c1x1V242 22c0x1c1x1V238 22c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="3" PrimID="3">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V10 136c0x1c1x1V14 136c0x1c1x1V14 124c0x1c1x1V28.571 124c0x1c1x1V28.571 128c0x1c1x1V43.143 128c0x1c1x1V43.143 124c0x1c1x1V57.714 124c0x1c1x1V57.714 128c0x1c1x1V72.286 128c0x1c1x1V72.286 124c0x1c1x1V86.857 124c0x1c1x1V86.857 128c0x1c1x1V101.429 128c0x1c1x1V101.429 124c0x1c1x1V116 124c0x1c1x1V116 136c0x1c1x1V120 136c0x1c1x1V120 148c0x1c1x1V116 148c0x1c1x1V116 160c0x1c1x1V120 160c0x1c1x1V120 172c0x1c1x1V116 172c0x1c1x1V116 184c0x1c1x1V14 184c0x1c1x1V14 172c0x1c1x1V10 172c0x1c1x1V10 160c0x1c1x1V14 160c0x1c1x1V14 148c0x1c1x1V10 148c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="4" PrimID="4">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V124 136c0x1c1x1V128 136c0x1c1x1V128 124c0x1c1x1V142.571 124c0x1c1x1V142.571 128c0x1c1x1V157.143 128c0x1c1x1V157.143 124c0x1c1x1V171.714 124c0x1c1x1V171.714 128c0x1c1x1V186.286 128c0x1c1x1V186.286 124c0x1c1x1V200.857 124c0x1c1x1V200.857 128c0x1c1x1V215.429 128c0x1c1x1V215.429 124c0x1c1x1V230 124c0x1c1x1V230 136c0x1c1x1V234 136c0x1c1x1V234 148c0x1c1x1V230 148c0x1c1x1V230 160c0x1c1x1V234 160c0x1c1x1V234 172c0x1c1x1V230 172c0x1c1x1V230 184c0x1c1x1V128 184c0x1c1x1V128 172c0x1c1x1V124 172c0x1c1x1V124 160c0x1c1x1V128 160c0x1c1x1V128 148c0x1c1x1V124 148c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Notes ShowOnLoad="1" Notes="Drawer divider box 1x1: external 110 x 110 x 60 mm, 4 mm material, open top.&#10;Parts: 1 x Base, 2 x Side A (110 mm long), 2 x Side B (110 mm long). Finger joints, no glue needed but recommended.&#10;All parts fit one 400 x 415 sheet with a 10 mm margin.&#10;Layer settings (8 mm/s, 100%, kerf 0.1 mm) are a starting point - test on scrap and adjust."/>
+</LightBurnProject>
