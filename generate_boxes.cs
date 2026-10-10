@@ -1,3 +1,6 @@
+// Copyright 2026 Nicholas Oughtibridge
+// SPDX-License-Identifier: Apache-2.0
+//
 // Generates finger-jointed, open-top drawer divider boxes as LightBurn (.lbrn2) files.
 // Run with:  dotnet run generate_boxes.cs
 //
