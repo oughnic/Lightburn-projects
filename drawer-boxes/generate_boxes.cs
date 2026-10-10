@@ -9,7 +9,7 @@ using System.Globalization;
 using System.Text;
 
 const double T      = 4.0;    // material thickness
-const double H      = 60.0;   // external box height
+double[] heights    = { 60.0, 120.0 }; // external box heights: standard and double-height variants
 const double UNIT   = 110.0;  // base grid unit
 const double FINGER = 12.0;   // target finger width (actual width is adjusted so the count is odd)
 const double GAP    = 4.0;    // spacing between parts on the sheet
@@ -18,7 +18,7 @@ const double BED_W  = 400.0 - 2 * BED_MARGIN;  // usable packing area
 const double BED_H  = 415.0 - 2 * BED_MARGIN;
 const double SHEET_OFFSET = 400 + 20; // sheet 2 parts are parked to the right of the bed
 
-// Laser layer defaults - CALIBRATE on scrap first. (Falcon 2 22 W, 3 mm ply ballpark.)
+// Laser layer defaults - CALIBRATE on scrap first. (Falcon 2 22 W, 4 mm ply ballpark.)
 const double CUT_SPEED  = 8;   // mm/s
 const double CUT_POWER  = 100; // %
 const int    CUT_PASSES = 1;
@@ -28,16 +28,17 @@ string outDir = args.Length > 0 ? args[0] : Directory.GetCurrentDirectory();
 Directory.CreateDirectory(Path.Combine(outDir, "preview"));
 
 var designs = new (int a, int b)[] { (1, 1), (1, 2), (1, 3), (2, 3), (3, 3) };
+foreach (var H in heights)
 foreach (var (a, b) in designs)
 {
     double W = a * UNIT, L = b * UNIT;
     var parts = new List<Panel>
     {
         BasePanel(W, L),
-        SidePanel(W, "A", $"Side A (front/back) {W:0}x{H:0}", fingersAtTop: true),
-        SidePanel(W, "A", $"Side A (front/back) {W:0}x{H:0}", fingersAtTop: true),
-        SidePanel(L, "B", $"Side B (left/right) {L:0}x{H:0}", fingersAtTop: false),
-        SidePanel(L, "B", $"Side B (left/right) {L:0}x{H:0}", fingersAtTop: false),
+        SidePanel(W, H, "A", $"Side A (front/back) {W:0}x{H:0}", fingersAtTop: true),
+        SidePanel(W, H, "A", $"Side A (front/back) {W:0}x{H:0}", fingersAtTop: true),
+        SidePanel(L, H, "B", $"Side B (left/right) {L:0}x{H:0}", fingersAtTop: false),
+        SidePanel(L, H, "B", $"Side B (left/right) {L:0}x{H:0}", fingersAtTop: false),
     };
     foreach (var p in parts) p.Outline = Trace(p);
 
@@ -46,10 +47,10 @@ foreach (var (a, b) in designs)
     var placed = Pack(order);
     int sheets = placed.Max(x => x.sheet) + 1;
 
-    string name = $"box_{a}x{b}";
+    string name = $"box_{a}x{b}_h{H:0}";
     string notes = $"Drawer divider box {a}x{b}: external {W:0} x {L:0} x {H:0} mm, {T:0} mm material, open top.\n" +
                    $"Parts: 1 x Base, 2 x Side A ({W:0} mm long), 2 x Side B ({L:0} mm long). Finger joints, no glue needed but recommended.\n" +
-                   (sheets > 1 ? $"Needs {sheets} sheets: layer 'Sheet 2' parts are parked right of the bed - move them onto the bed for the second run.\n" : "All parts fit one 400 x 415 sheet with a 10 mm margin.\n") +
+                   (sheets > 1 ? $"Needs {sheets} sheets: parts on layers 'Sheet 2' onwards are parked right of the bed - move each sheet's parts onto the bed for its run.\n" : "All parts fit one 400 x 415 sheet with a 10 mm margin.\n") +
                    $"Layer settings ({CUT_SPEED} mm/s, {CUT_POWER}%, kerf {KERF} mm) are a starting point - test on scrap and adjust.";
 
     File.WriteAllText(Path.Combine(outDir, name + ".lbrn2"), Lbrn2(placed, sheets, notes), new UTF8Encoding(false));
@@ -100,7 +101,7 @@ static Panel BasePanel(double W, double L)
     return p;
 }
 
-static Panel SidePanel(double len, string label, string name, bool fingersAtTop)
+static Panel SidePanel(double len, double H, string label, string name, bool fingersAtTop)
 {
     var p = new Panel { Name = name, Label = label, W = len, H = H };
     var su = Segs(T, len - T, FINGER);
