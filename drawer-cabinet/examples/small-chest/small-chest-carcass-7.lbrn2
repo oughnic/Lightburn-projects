@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightBurnProject AppVersion="1.7.08" FormatVersion="1" MaterialHeight="3" MirrorX="False" MirrorY="False">
+    <CutSetting type="Cut">
+        <index Value="0"/>
+        <name Value="Cut"/>
+        <minPower Value="100"/>
+        <maxPower Value="100"/>
+        <maxPower2 Value="100"/>
+        <speed Value="8"/>
+        <numPasses Value="1"/>
+        <kerf Value="0.1"/>
+        <priority Value="0"/>
+    </CutSetting>
+    <Shape Type="Path" CutIndex="0" VertID="0" PrimID="0">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V15 15c0x1c1x1V24.909 15c0x1c1x1V24.909 18c0x1c1x1V36.849 18c0x1c1x1V36.849 15c0x1c1x1V48.788 15c0x1c1x1V48.788 18c0x1c1x1V60.727 18c0x1c1x1V60.727 15c0x1c1x1V72.667 15c0x1c1x1V72.667 18c0x1c1x1V84.606 18c0x1c1x1V84.606 15c0x1c1x1V96.546 15c0x1c1x1V96.546 18c0x1c1x1V108.485 18c0x1c1x1V108.485 15c0x1c1x1V120.424 15c0x1c1x1V120.424 18c0x1c1x1V132.364 18c0x1c1x1V132.364 15c0x1c1x1V144.303 15c0x1c1x1V144.303 18c0x1c1x1V156.242 18c0x1c1x1V156.242 15c0x1c1x1V168.182 15c0x1c1x1V168.182 18c0x1c1x1V180.121 18c0x1c1x1V180.121 15c0x1c1x1V192.061 15c0x1c1x1V192.061 18c0x1c1x1V204 18c0x1c1x1V204 30.783c0x1c1x1V207 30.783c0x1c1x1V207 43.565c0x1c1x1V204 43.565c0x1c1x1V204 56.348c0x1c1x1V207 56.348c0x1c1x1V207 69.13c0x1c1x1V204 69.13c0x1c1x1V204 81.913c0x1c1x1V207 81.913c0x1c1x1V207 94.696c0x1c1x1V204 94.696c0x1c1x1V204 107.478c0x1c1x1V207 107.478c0x1c1x1V207 120.261c0x1c1x1V204 120.261c0x1c1x1V204 133.044c0x1c1x1V207 133.044c0x1c1x1V207 145.826c0x1c1x1V204 145.826c0x1c1x1V204 158.609c0x1c1x1V207 158.609c0x1c1x1V207 171.391c0x1c1x1V204 171.391c0x1c1x1V204 184.174c0x1c1x1V207 184.174c0x1c1x1V207 196.957c0x1c1x1V204 196.957c0x1c1x1V204 209.739c0x1c1x1V207 209.739c0x1c1x1V207 222.522c0x1c1x1V204 222.522c0x1c1x1V204 235.304c0x1c1x1V207 235.304c0x1c1x1V207 248.087c0x1c1x1V204 248.087c0x1c1x1V204 260.87c0x1c1x1V207 260.87c0x1c1x1V207 273.652c0x1c1x1V204 273.652c0x1c1x1V204 286.435c0x1c1x1V207 286.435c0x1c1x1V207 299.217c0x1c1x1V204 299.217c0x1c1x1V204 312c0x1c1x1V192.061 312c0x1c1x1V192.061 315c0x1c1x1V180.121 315c0x1c1x1V180.121 312c0x1c1x1V168.182 312c0x1c1x1V168.182 315c0x1c1x1V156.242 315c0x1c1x1V156.242 312c0x1c1x1V144.303 312c0x1c1x1V144.303 315c0x1c1x1V132.364 315c0x1c1x1V132.364 312c0x1c1x1V120.424 312c0x1c1x1V120.424 315c0x1c1x1V108.485 315c0x1c1x1V108.485 312c0x1c1x1V96.546 312c0x1c1x1V96.546 315c0x1c1x1V84.606 315c0x1c1x1V84.606 312c0x1c1x1V72.667 312c0x1c1x1V72.667 315c0x1c1x1V60.727 315c0x1c1x1V60.727 312c0x1c1x1V48.788 312c0x1c1x1V48.788 315c0x1c1x1V36.849 315c0x1c1x1V36.849 312c0x1c1x1V24.909 312c0x1c1x1V24.909 315c0x1c1x1V15 315c0x1c1x1V15 268.5c0x1c1x1V18 268.5c0x1c1x1V18 271.5c0x1c1x1V22 271.5c0x1c1x1V22 259.5c0x1c1x1V18 259.5c0x1c1x1V18 262.5c0x1c1x1V15 262.5c0x1c1x1V15 201.5c0x1c1x1V18 201.5c0x1c1x1V18 204.5c0x1c1x1V22 204.5c0x1c1x1V22 192.5c0x1c1x1V18 192.5c0x1c1x1V18 195.5c0x1c1x1V15 195.5c0x1c1x1V15 134.5c0x1c1x1V18 134.5c0x1c1x1V18 137.5c0x1c1x1V22 137.5c0x1c1x1V22 125.5c0x1c1x1V18 125.5c0x1c1x1V18 128.5c0x1c1x1V15 128.5c0x1c1x1V15 67.5c0x1c1x1V18 67.5c0x1c1x1V18 70.5c0x1c1x1V22 70.5c0x1c1x1V22 58.5c0x1c1x1V18 58.5c0x1c1x1V18 61.5c0x1c1x1V15 61.5c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="1" PrimID="1">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V17.053 209c0x1c1x1V17.053 212c0x1c1x1V37.158 212c0x1c1x1V37.158 209c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="2" PrimID="2">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V57.263 209c0x1c1x1V57.263 212c0x1c1x1V77.368 212c0x1c1x1V77.368 209c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="3" PrimID="3">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V70.667 24c0x1c1x1V70.667 43.889c0x1c1x1V73.667 43.889c0x1c1x1V73.667 24c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="4" PrimID="4">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V70.667 63.778c0x1c1x1V70.667 83.667c0x1c1x1V73.667 83.667c0x1c1x1V73.667 63.778c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="5" PrimID="5">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V70.667 103.556c0x1c1x1V70.667 123.444c0x1c1x1V73.667 123.444c0x1c1x1V73.667 103.556c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="6" PrimID="6">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V70.667 143.333c0x1c1x1V70.667 163.222c0x1c1x1V73.667 163.222c0x1c1x1V73.667 143.333c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="7" PrimID="7">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V70.667 183.111c0x1c1x1V70.667 203c0x1c1x1V73.667 203c0x1c1x1V73.667 183.111c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="8" PrimID="8">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V70.667 218c0x1c1x1V70.667 247.333c0x1c1x1V73.667 247.333c0x1c1x1V73.667 218c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="9" PrimID="9">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V70.667 276.667c0x1c1x1V70.667 306c0x1c1x1V73.667 306c0x1c1x1V73.667 276.667c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="10" PrimID="10">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V97.474 209c0x1c1x1V97.474 212c0x1c1x1V117.579 212c0x1c1x1V117.579 209c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="11" PrimID="11">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V137.684 209c0x1c1x1V137.684 212c0x1c1x1V157.79 212c0x1c1x1V157.79 209c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="12" PrimID="12">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V177.895 209c0x1c1x1V177.895 212c0x1c1x1V198 212c0x1c1x1V198 209c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Notes ShowOnLoad="1" Notes="small-chest - carcass sheet 7 of 11: 1 parts, 1821 mm of cutting, 3 mm material.&#10;Place the 300 x 400 mm stock with its corner at X 10, Y 10; parts stay 5 mm inside its edges.&#10;Parts: Back 2/2.&#10;Layer settings (8 mm/s, 100%, kerf 0.1 mm) are a starting point - test on scrap and adjust."/>
+</LightBurnProject>

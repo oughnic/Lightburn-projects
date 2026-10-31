@@ -1,0 +1,10 @@
+{
+  "name": "small-chest",
+  "stock": { "width": 300, "length": 400 },
+  "cabinet": { "width": 400, "height": 300, "depth": 280 },
+  "rows": [
+    { "height": 100 },
+    { "height": "auto" }
+  ],
+  "drawers": { "minWidth": 120, "fingerHoleRadius": 15 }
+}

@@ -6,6 +6,7 @@ Each project lives in its own folder with its own README.
 | Project | What it is |
 |---------|------------|
 | [drawer-boxes](drawer-boxes/) | Modular finger-jointed divider boxes for a kitchen drawer, on a 110 mm grid, in standard and double heights. Generated from a single-file C# script. |
+| [drawer-cabinet](drawer-cabinet/) | A cabinet of finger-jointed drawers from a JSON config: any size, rows of drawers with finger holes, shelves, dividers, and panels split across sheets. Generated from a single-file C# script. |
 
 ## Licence
 

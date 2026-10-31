@@ -77,6 +77,7 @@ writing a new one. Everything below was learned by testing against LightBurn 2.1
 - **Use the compact `VertList` / `PrimList` form.** The older one-element-per-vertex form
   (`<V vx= vy=/>`, `<P T="L"/>`) loads with no shapes in LightBurn 2.1.
 - **Put `<Notes>` last**, just before the closing tag.
+- **One file per sheet is easier to use than parked layers.** `drawer-cabinet` writes a file per sheet, each with a single `Cut` layer. The parked-layers approach in `drawer-boxes` is fine for 2 or 3 sheets.
 - **Spread work over several sheets when it does not fit.** Give each sheet its own
   `CutSetting` named `Sheet n`, and park sheets after the first at an x offset of
   bed width plus 20 mm. The user drags a sheet onto the bed or disables the other layers.
@@ -99,15 +100,22 @@ writing a new one. Everything below was learned by testing against LightBurn 2.1
 
 ## Verifying
 
+0. For anything with more than one panel, check the joints in code before writing files.
+   Place every panel in 3D, assert that no two overlap, and assert that the total volume
+   equals the expected solid. `drawer-cabinet/generate_cabinet.cs` (`Verify`) does this and
+   caught a rounding clash straight away. Round every coordinate to 4 decimals when you
+   create it, so slots and tabs agree exactly.
 1. Compute each shape's perimeter in the generator and sum it. Then open the file in
    LightBurn, press Alt+P for the preview, and compare the cut distance. Agreement within a
    few millimetres means no stray lines. Known good: 2588 mm in LightBurn against 2592 mm
-   computed for the 2x3 box.
+   computed for the 2x3 box, and 2020 mm against 2022 mm for a cabinet sheet.
 2. Check the shape count and that every part sits inside the bed margin.
-3. When driving LightBurn through computer use, open files with Ctrl+O and type the full
-   path. Do not use `open_application` repeatedly, since it starts extra LightBurn
-   instances. If a save prompt appears on close, choose not to save, because LightBurn can
-   overwrite a generated file.
+3. When driving LightBurn through computer use, open files with Ctrl+O, click the File name
+   box, type the full path, then press Enter as a separate action. The tool refuses
+   newlines typed into a file dialog. Do not use `open_application` repeatedly, since it
+   starts extra LightBurn instances. Dismiss the update prompt with No. LightBurn marks a
+   file modified after Preview, so a save prompt appears when you open another file or
+   exit: choose Discard, because Save overwrites the generated file.
 4. Tell the user plainly which files were opened in LightBurn and which were only checked
    in the SVG previews.
 
