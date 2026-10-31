@@ -2,14 +2,10 @@
   "name": "parts-cabinet",
   "stock": { "width": 300, "length": 400 },
   "cabinet": { "width": 330, "height": 200, "depth": 200 },
-  // Rows are listed top first. Three equal rows: 188 mm of clear height / 3 = 62.667 mm each.
-  // The last row is "auto" so the three heights add up exactly.
   "rows": [
     { "height": 62.667, "count": 6 },
     { "height": 62.667, "count": 3 },
     { "height": "auto", "count": 2 }
   ],
-  // Each front has a 3 mm hole (radius 1.5) for an M3 bolt used as a handle.
-  // minWidth only has to be no larger than the narrowest drawer (the 6-drawer row, about 54 mm).
-  "drawers": { "minWidth": 50, "fingerHoleRadius": 1.5 }
+  "drawers": { "minWidth": 50, "fingerHoleRadius": 1.6 }
 }

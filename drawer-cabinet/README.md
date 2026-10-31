@@ -52,7 +52,7 @@ of a split panel.
 
 ## Config format
 
-A plain JSON file. Names are not case sensitive. Comments and trailing commas are allowed.
+A standard JSON file. Names are not case sensitive. The reader also tolerates comments and trailing commas, but they are not valid JSON, so the examples avoid them.
 A misspelt name is reported as an error, not ignored. All lengths are millimetres.
 
 ```json
@@ -233,3 +233,10 @@ every part. On one of them the preview cut distance (2020 mm) matched the comput
 - Drawers must be at least 40 mm wide, 25 mm high and 40 mm deep.
 - Each drawer and divider is cut as a separate part. There is no engraved part numbering, so
   keep the preview pictures to hand when assembling.
+
+## Another example
+
+[`examples/parts-cabinet.json`](examples/parts-cabinet.json): 330 x 200 x 200 mm with three
+equal rows of 6, 3 and 2 drawers, and a 3.2 mm hole (radius 1.6) in each front for an M3 bolt
+handle. The last row is `"auto"` so that the three equal heights add up exactly. Generated
+files are in [`examples/parts-cabinet/`](examples/parts-cabinet/): 14 sheets.
