@@ -8,7 +8,7 @@ External size 330 x 200 x 200 mm (width x height x depth), 3 mm material. Rows a
 | 2 | 62.7 mm | 3 | 106 x 194 x 59.7 mm | 0 |
 | 3 | 62.7 mm | 2 | 160 x 194 x 59.7 mm | 0 |
 
-Finger holes: radius 1.5 mm in the centre of each front.
+Finger holes: radius 1.6 mm in the centre of each front.
 
 Parts: 7 carcass pieces, 55 drawer pieces.
 
@@ -22,12 +22,12 @@ Parts: 7 carcass pieces, 55 drawer pieces.
 | parts-cabinet-carcass-6.lbrn2 | 1 | 1397 mm |
 | parts-cabinet-carcass-7.lbrn2 | 1 | 1397 mm |
 | parts-cabinet-drawers-1.lbrn2 | 4 | 2885 mm |
-| parts-cabinet-drawers-2.lbrn2 | 9 | 4419 mm |
+| parts-cabinet-drawers-2.lbrn2 | 9 | 4420 mm |
 | parts-cabinet-drawers-3.lbrn2 | 8 | 4429 mm |
-| parts-cabinet-drawers-4.lbrn2 | 8 | 4438 mm |
+| parts-cabinet-drawers-4.lbrn2 | 8 | 4439 mm |
 | parts-cabinet-drawers-5.lbrn2 | 8 | 4434 mm |
-| parts-cabinet-drawers-6.lbrn2 | 13 | 4992 mm |
-| parts-cabinet-drawers-7.lbrn2 | 5 | 1286 mm |
+| parts-cabinet-drawers-6.lbrn2 | 13 | 4996 mm |
+| parts-cabinet-drawers-7.lbrn2 | 5 | 1287 mm |
 
 ## Parts
 
