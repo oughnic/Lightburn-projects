@@ -36,8 +36,9 @@ One `.lbrn2` file per sheet of wood, so each file is one run of the laser:
 
 | File | Contents |
 |------|----------|
-| `<name>-carcass-N.lbrn2` | Carcass, shelves and dividers |
-| `<name>-drawers-N.lbrn2` | Every drawer part |
+| `<name>-carcass-N.lbrn2` | Carcass, shelves and dividers (default) |
+| `<name>-drawers-N.lbrn2` | Every drawer part (default) |
+| `<name>-sheet-N.lbrn2` | All parts together, when `output.mixParts` is `true` |
 | `<name>-summary.md` | Row and drawer sizes, and a table of every part with its size and file |
 | `<name>-front.svg` | Front view of the finished cabinet |
 | `preview/<file>.svg` | Picture of each sheet, with part labels |
@@ -179,6 +180,16 @@ not, the error gives the largest radius that will.
 
 3 mm ply sags if a shelf is wide and heavily loaded. Lower this for heavy contents.
 
+### `output`
+
+| Key | Default | Meaning |
+|-----|---------|---------|
+| `mixParts` | `false` | `false` puts carcass parts and drawer parts on separate sheets. `true` packs them together to waste less wood. |
+
+Mixing fills the strips left beside big panels with small drawer parts. It saved 3 sheets
+on the parts cabinet below (14 down to 11). The files are then named `<name>-sheet-N.lbrn2`
+and no longer split into carcass and drawers. The summary file lists the sheet for every part.
+
 ### `joints`
 
 Rarely needed.
@@ -209,7 +220,7 @@ Plywood use grows quickly. A 300 x 400 sheet is only 0.12 m2, and every panel an
 cut from it. Deep drawers cost the most: each drawer side is as long as the cabinet is deep.
 Many panels also leave an unusable strip, because a 280 mm panel nearly fills the 290 mm
 cutting width. Check the sheet count the generator prints before you buy wood. Fewer, bigger
-drawers use less wood than many small ones.
+drawers use less wood than many small ones. Turning on `output.mixParts` usually saves a few more sheets.
 
 ## Checks the generator makes
 
@@ -239,4 +250,4 @@ every part. On one of them the preview cut distance (2020 mm) matched the comput
 [`examples/parts-cabinet.json`](examples/parts-cabinet.json): 330 x 200 x 200 mm with three
 equal rows of 6, 3 and 2 drawers, and a 3.2 mm hole (radius 1.6) in each front for an M3 bolt
 handle. The last row is `"auto"` so that the three equal heights add up exactly. Generated
-files are in [`examples/parts-cabinet/`](examples/parts-cabinet/): 14 sheets.
+files are in [`examples/parts-cabinet/`](examples/parts-cabinet/): 11 sheets, with `output.mixParts` on (14 without).

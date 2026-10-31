@@ -29,6 +29,7 @@ class Config
     public DrawerCfg Drawers { get; set; } = new();
     public SupportCfg Supports { get; set; } = new();
     public JointCfg Joints { get; set; } = new();
+    public OutputCfg Output { get; set; } = new();
 }
 class MaterialCfg { public double Thickness { get; set; } = 3; }
 class StockCfg { public double Width { get; set; } = 300; public double Length { get; set; } = 400; public double EdgeMargin { get; set; } = 5; }
@@ -50,6 +51,7 @@ class DrawerCfg
     public double ClearanceZ { get; set; } = 3;      // gap behind the drawer
 }
 class SupportCfg { public double? MaxSpan { get; set; } = 350; }
+class OutputCfg { public bool MixParts { get; set; } = false; }
 class JointCfg
 {
     public double FingerWidth { get; set; } = 12;
@@ -315,14 +317,22 @@ static class Gen
 
         // ---- carcass pieces
         var carcassPieces = carcass.SelectMany(SplitPanel).ToList();
-
         // ---- pack and write
         Directory.CreateDirectory(Path.Combine(outDir, "preview"));
+        // Remove sheets left over from an earlier run, which may have used different file names.
+        var stale = new System.Text.RegularExpressions.Regex("^" + System.Text.RegularExpressions.Regex.Escape(cfg.Name) + @"-(carcass|drawers|sheet)-\d+\.(lbrn2|svg)$");
+        foreach (var dir in new[] { outDir, Path.Combine(outDir, "preview") })
+            foreach (var old in Directory.GetFiles(dir))
+                if (stale.IsMatch(Path.GetFileName(old))) File.Delete(old);
+        // Either carcass and drawers get their own sheets, or all parts are packed together to waste less wood.
+        var groups = cfg.Output.MixParts
+            ? new[] { (prefix: "sheet", label: "mixed parts", pieces: carcassPieces.Concat(drawerPieces).ToList()) }
+            : new[] { (prefix: "carcass", label: "carcass", pieces: carcassPieces), (prefix: "drawers", label: "drawers", pieces: drawerPieces) };
         var files = new List<(string name, string group, int idx, int of, List<Placed> sheet)>();
-        foreach (var (group, pieces) in new[] { ("carcass", carcassPieces), ("drawers", drawerPieces) })
+        foreach (var g in groups)
         {
-            var sheets = Pack(pieces);
-            for (int i = 0; i < sheets.Count; i++) files.Add(($"{cfg.Name}-{group}-{i + 1}", group, i + 1, sheets.Count, sheets[i]));
+            var sheets = Pack(g.pieces);
+            for (int i = 0; i < sheets.Count; i++) files.Add(($"{cfg.Name}-{g.prefix}-{i + 1}", g.label, i + 1, sheets.Count, sheets[i]));
         }
         foreach (var f in files)
         {
@@ -333,9 +343,11 @@ static class Gen
         File.WriteAllText(Path.Combine(outDir, cfg.Name + "-front.svg"), Elevation(cfg, W, H, D, layouts, dr), new UTF8Encoding(false));
         File.WriteAllText(Path.Combine(outDir, cfg.Name + "-summary.md"), Summary(cfg, W, H, D, layouts, drawerInfo, carcassPieces, drawerPieces, files.Select(x => (x.name, x.sheet)).ToList()), new UTF8Encoding(false));
 
-        int cs = files.Count(x => x.group == "carcass"), dsh = files.Count(x => x.group == "drawers");
         Console.WriteLine($"{cfg.Name}: {W:0.#} x {H:0.#} x {D:0.#} mm, {n} row(s), {drawerInfo.Count} drawer(s), {layouts.Sum(l => l.K)} divider(s)");
-        Console.WriteLine($"  {carcassPieces.Count} carcass pieces on {cs} sheet(s), {drawerPieces.Count} drawer pieces on {dsh} sheet(s)");
+        if (cfg.Output.MixParts)
+            Console.WriteLine($"  {carcassPieces.Count} carcass and {drawerPieces.Count} drawer pieces mixed on {files.Count} sheet(s)");
+        else
+            Console.WriteLine($"  {carcassPieces.Count} carcass pieces on {files.Count(x => x.group == "carcass")} sheet(s), {drawerPieces.Count} drawer pieces on {files.Count(x => x.group == "drawers")} sheet(s)");
         Console.WriteLine($"  cutting area per sheet {G.JobW:0.#} x {G.JobH:0.#} mm; output in {outDir}");
     }
 
