@@ -7,5 +7,6 @@
     { "height": 62.667, "count": 3 },
     { "height": "auto", "count": 2 }
   ],
-  "drawers": { "minWidth": 50, "fingerHoleRadius": 1.6 }
+  "drawers": { "minWidth": 50, "fingerHoleRadius": 1.6 },
+  "output": { "mixParts": true }
 }
