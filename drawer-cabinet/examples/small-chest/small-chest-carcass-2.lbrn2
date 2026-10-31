@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightBurnProject AppVersion="1.7.08" FormatVersion="1" MaterialHeight="3" MirrorX="False" MirrorY="False">
+    <CutSetting type="Cut">
+        <index Value="0"/>
+        <name Value="Cut"/>
+        <minPower Value="100"/>
+        <maxPower Value="100"/>
+        <maxPower2 Value="100"/>
+        <speed Value="8"/>
+        <numPasses Value="1"/>
+        <kerf Value="0.1"/>
+        <priority Value="0"/>
+    </CutSetting>
+    <Shape Type="Path" CutIndex="0" VertID="0" PrimID="0">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V282.826 15c0x1c1x1V282.826 18c0x1c1x1V295 18c0x1c1x1V295 30.783c0x1c1x1V292 30.783c0x1c1x1V292 43.565c0x1c1x1V295 43.565c0x1c1x1V295 56.348c0x1c1x1V292 56.348c0x1c1x1V292 69.13c0x1c1x1V295 69.13c0x1c1x1V295 81.913c0x1c1x1V292 81.913c0x1c1x1V292 94.696c0x1c1x1V295 94.696c0x1c1x1V295 107.478c0x1c1x1V292 107.478c0x1c1x1V292 120.261c0x1c1x1V295 120.261c0x1c1x1V295 133.044c0x1c1x1V292 133.044c0x1c1x1V292 145.826c0x1c1x1V295 145.826c0x1c1x1V295 158.609c0x1c1x1V292 158.609c0x1c1x1V292 171.391c0x1c1x1V295 171.391c0x1c1x1V295 184.174c0x1c1x1V292 184.174c0x1c1x1V292 196.957c0x1c1x1V295 196.957c0x1c1x1V295 209.739c0x1c1x1V292 209.739c0x1c1x1V292 222.522c0x1c1x1V295 222.522c0x1c1x1V295 235.304c0x1c1x1V292 235.304c0x1c1x1V292 248.087c0x1c1x1V295 248.087c0x1c1x1V295 260.87c0x1c1x1V292 260.87c0x1c1x1V292 273.652c0x1c1x1V295 273.652c0x1c1x1V295 286.435c0x1c1x1V292 286.435c0x1c1x1V292 299.217c0x1c1x1V295 299.217c0x1c1x1V295 312c0x1c1x1V282.826 312c0x1c1x1V282.826 315c0x1c1x1V270.652 315c0x1c1x1V270.652 312c0x1c1x1V258.478 312c0x1c1x1V258.478 315c0x1c1x1V246.304 315c0x1c1x1V246.304 312c0x1c1x1V234.13 312c0x1c1x1V234.13 315c0x1c1x1V221.957 315c0x1c1x1V221.957 312c0x1c1x1V209.783 312c0x1c1x1V209.783 315c0x1c1x1V197.609 315c0x1c1x1V197.609 312c0x1c1x1V185.435 312c0x1c1x1V185.435 315c0x1c1x1V173.261 315c0x1c1x1V173.261 312c0x1c1x1V161.087 312c0x1c1x1V161.087 315c0x1c1x1V148.913 315c0x1c1x1V148.913 312c0x1c1x1V136.739 312c0x1c1x1V136.739 315c0x1c1x1V124.565 315c0x1c1x1V124.565 312c0x1c1x1V112.391 312c0x1c1x1V112.391 315c0x1c1x1V100.217 315c0x1c1x1V100.217 312c0x1c1x1V88.044 312c0x1c1x1V88.044 315c0x1c1x1V75.87 315c0x1c1x1V75.87 312c0x1c1x1V63.696 312c0x1c1x1V63.696 315c0x1c1x1V51.522 315c0x1c1x1V51.522 312c0x1c1x1V39.348 312c0x1c1x1V39.348 315c0x1c1x1V27.174 315c0x1c1x1V27.174 312c0x1c1x1V15 312c0x1c1x1V15 18c0x1c1x1V27.174 18c0x1c1x1V27.174 15c0x1c1x1V39.348 15c0x1c1x1V39.348 18c0x1c1x1V51.522 18c0x1c1x1V51.522 15c0x1c1x1V63.696 15c0x1c1x1V63.696 18c0x1c1x1V75.87 18c0x1c1x1V75.87 15c0x1c1x1V88.044 15c0x1c1x1V88.044 18c0x1c1x1V100.217 18c0x1c1x1V100.217 15c0x1c1x1V112.391 15c0x1c1x1V112.391 18c0x1c1x1V124.565 18c0x1c1x1V124.565 15c0x1c1x1V136.739 15c0x1c1x1V136.739 18c0x1c1x1V148.913 18c0x1c1x1V148.913 15c0x1c1x1V161.087 15c0x1c1x1V161.087 18c0x1c1x1V173.261 18c0x1c1x1V173.261 15c0x1c1x1V185.435 15c0x1c1x1V185.435 18c0x1c1x1V197.609 18c0x1c1x1V197.609 15c0x1c1x1V209.783 15c0x1c1x1V209.783 18c0x1c1x1V221.957 18c0x1c1x1V221.957 15c0x1c1x1V234.13 15c0x1c1x1V234.13 18c0x1c1x1V246.304 18c0x1c1x1V246.304 15c0x1c1x1V258.478 15c0x1c1x1V258.478 18c0x1c1x1V270.652 18c0x1c1x1V270.652 15c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="1" PrimID="1">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V286 209c0x1c1x1V265.615 209c0x1c1x1V265.615 212c0x1c1x1V286 212c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="2" PrimID="2">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V245.231 209c0x1c1x1V224.846 209c0x1c1x1V224.846 212c0x1c1x1V245.231 212c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="3" PrimID="3">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V204.462 209c0x1c1x1V184.077 209c0x1c1x1V184.077 212c0x1c1x1V204.462 212c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="4" PrimID="4">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V163.692 209c0x1c1x1V143.308 209c0x1c1x1V143.308 212c0x1c1x1V163.692 212c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="5" PrimID="5">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V122.923 209c0x1c1x1V102.539 209c0x1c1x1V102.539 212c0x1c1x1V122.923 212c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="6" PrimID="6">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V82.154 209c0x1c1x1V61.769 209c0x1c1x1V61.769 212c0x1c1x1V82.154 212c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Shape Type="Path" CutIndex="0" VertID="7" PrimID="7">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V41.385 209c0x1c1x1V21 209c0x1c1x1V21 212c0x1c1x1V41.385 212c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Notes ShowOnLoad="1" Notes="small-chest - carcass sheet 2 of 11: 1 parts, 1673 mm of cutting, 3 mm material.&#10;Place the 300 x 400 mm stock with its corner at X 10, Y 10; parts stay 5 mm inside its edges.&#10;Parts: Right.&#10;Layer settings (8 mm/s, 100%, kerf 0.1 mm) are a starting point - test on scrap and adjust."/>
+</LightBurnProject>

@@ -1,0 +1,12 @@
+{
+  "name": "kitchen-cabinet",
+  "stock": { "width": 300, "length": 400 },
+  "cabinet": { "width": 600, "height": 480, "depth": 350 },
+  "rows": [
+    { "height": 80 },
+    { "height": 100 },
+    { "height": 100 },
+    { "height": "auto" }
+  ],
+  "drawers": { "minWidth": 120, "fingerHoleRadius": 15 }
+}

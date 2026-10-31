@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -22 420 336">
+<text x="0" y="-8" font-size="9" font-family="sans-serif">small-chest: front view, 400 x 300 x 280 mm external</text>
+<g transform="translate(0,300) scale(1,-1)">
+<rect x="0" y="0" width="400" height="300" fill="#cfae74" stroke="#000" stroke-width="0.6"/>
+<rect x="3" y="3" width="394" height="191" fill="#5b4a32"/>
+<rect x="263.667" y="3" width="3" height="191" fill="#cfae74" stroke="#000" stroke-width="0.4"/>
+<rect x="4" y="3" width="128.333" height="188" fill="#e2c48a" stroke="#000" stroke-width="0.5"/>
+<circle cx="68.167" cy="97" r="15" fill="#5b4a32" stroke="#000" stroke-width="0.4"/>
+<text x="7" y="-188" transform="scale(1,-1)" font-size="6" font-family="sans-serif">2.1  128.3 x 188</text>
+<rect x="134.333" y="3" width="128.333" height="188" fill="#e2c48a" stroke="#000" stroke-width="0.5"/>
+<circle cx="198.5" cy="97" r="15" fill="#5b4a32" stroke="#000" stroke-width="0.4"/>
+<text x="137.333" y="-188" transform="scale(1,-1)" font-size="6" font-family="sans-serif">2.2  128.3 x 188</text>
+<rect x="267.667" y="3" width="128.333" height="188" fill="#e2c48a" stroke="#000" stroke-width="0.5"/>
+<circle cx="331.833" cy="97" r="15" fill="#5b4a32" stroke="#000" stroke-width="0.4"/>
+<text x="270.667" y="-188" transform="scale(1,-1)" font-size="6" font-family="sans-serif">2.3  128.3 x 188</text>
+<rect x="3" y="197" width="394" height="100" fill="#5b4a32"/>
+<rect x="263.667" y="197" width="3" height="100" fill="#cfae74" stroke="#000" stroke-width="0.4"/>
+<rect x="4" y="197" width="128.333" height="97" fill="#e2c48a" stroke="#000" stroke-width="0.5"/>
+<circle cx="68.167" cy="245.5" r="15" fill="#5b4a32" stroke="#000" stroke-width="0.4"/>
+<text x="7" y="-291" transform="scale(1,-1)" font-size="6" font-family="sans-serif">1.1  128.3 x 97</text>
+<rect x="134.333" y="197" width="128.333" height="97" fill="#e2c48a" stroke="#000" stroke-width="0.5"/>
+<circle cx="198.5" cy="245.5" r="15" fill="#5b4a32" stroke="#000" stroke-width="0.4"/>
+<text x="137.333" y="-291" transform="scale(1,-1)" font-size="6" font-family="sans-serif">1.2  128.3 x 97</text>
+<rect x="267.667" y="197" width="128.333" height="97" fill="#e2c48a" stroke="#000" stroke-width="0.5"/>
+<circle cx="331.833" cy="245.5" r="15" fill="#5b4a32" stroke="#000" stroke-width="0.4"/>
+<text x="270.667" y="-291" transform="scale(1,-1)" font-size="6" font-family="sans-serif">1.3  128.3 x 97</text>
+</g></svg>
