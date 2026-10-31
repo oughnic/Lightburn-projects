@@ -251,3 +251,7 @@ every part. On one of them the preview cut distance (2020 mm) matched the comput
 equal rows of 6, 3 and 2 drawers, and a 3.2 mm hole (radius 1.6) in each front for an M3 bolt
 handle. The last row is `"auto"` so that the three equal heights add up exactly. Generated
 files are in [`examples/parts-cabinet/`](examples/parts-cabinet/): 11 sheets, with `output.mixParts` on (14 without).
+
+[`examples/parts-cabinet-180.json`](examples/parts-cabinet-180.json) is the same cabinet at
+180 mm high, with three rows of 56 mm. It needs 10 sheets against 11 at 200 mm. Generated
+files are in [`examples/parts-cabinet-180/`](examples/parts-cabinet-180/).

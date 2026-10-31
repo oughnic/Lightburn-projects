@@ -1,0 +1,12 @@
+{
+  "name": "parts-cabinet-180",
+  "stock": { "width": 300, "length": 400 },
+  "cabinet": { "width": 330, "height": 180, "depth": 200 },
+  "rows": [
+    { "height": 56, "count": 6 },
+    { "height": 56, "count": 3 },
+    { "height": "auto", "count": 2 }
+  ],
+  "drawers": { "minWidth": 50, "fingerHoleRadius": 1.6 },
+  "output": { "mixParts": true }
+}
