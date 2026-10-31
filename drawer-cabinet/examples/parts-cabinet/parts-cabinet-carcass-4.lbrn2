@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightBurnProject AppVersion="1.7.08" FormatVersion="1" MaterialHeight="3" MirrorX="False" MirrorY="False">
+    <CutSetting type="Cut">
+        <index Value="0"/>
+        <name Value="Cut"/>
+        <minPower Value="100"/>
+        <maxPower Value="100"/>
+        <maxPower2 Value="100"/>
+        <speed Value="8"/>
+        <numPasses Value="1"/>
+        <kerf Value="0.1"/>
+        <priority Value="0"/>
+    </CutSetting>
+    <Shape Type="Path" CutIndex="0" VertID="0" PrimID="0">
+        <XForm>1 0 0 1 0 0</XForm>
+        <VertList>V206 15c0x1c1x1V206 18c0x1c1x1V212 18c0x1c1x1V212 24c0x1c1x1V215 24c0x1c1x1V215 44.8c0x1c1x1V212 44.8c0x1c1x1V212 65.6c0x1c1x1V215 65.6c0x1c1x1V215 86.4c0x1c1x1V212 86.4c0x1c1x1V212 107.2c0x1c1x1V215 107.2c0x1c1x1V215 128c0x1c1x1V212 128c0x1c1x1V212 148.8c0x1c1x1V215 148.8c0x1c1x1V215 169.6c0x1c1x1V212 169.6c0x1c1x1V212 190.4c0x1c1x1V215 190.4c0x1c1x1V215 211.2c0x1c1x1V212 211.2c0x1c1x1V212 232c0x1c1x1V215 232c0x1c1x1V215 252.8c0x1c1x1V212 252.8c0x1c1x1V212 273.6c0x1c1x1V215 273.6c0x1c1x1V215 294.4c0x1c1x1V212 294.4c0x1c1x1V212 315.2c0x1c1x1V215 315.2c0x1c1x1V215 336c0x1c1x1V212 336c0x1c1x1V212 342c0x1c1x1V206 342c0x1c1x1V206 345c0x1c1x1V185.444 345c0x1c1x1V185.444 342c0x1c1x1V164.889 342c0x1c1x1V164.889 345c0x1c1x1V144.333 345c0x1c1x1V144.333 342c0x1c1x1V123.778 342c0x1c1x1V123.778 345c0x1c1x1V103.222 345c0x1c1x1V103.222 342c0x1c1x1V82.667 342c0x1c1x1V82.667 345c0x1c1x1V62.111 345c0x1c1x1V62.111 342c0x1c1x1V41.556 342c0x1c1x1V41.556 345c0x1c1x1V21 345c0x1c1x1V21 342c0x1c1x1V15 342c0x1c1x1V15 18c0x1c1x1V21 18c0x1c1x1V21 15c0x1c1x1V41.556 15c0x1c1x1V41.556 18c0x1c1x1V62.111 18c0x1c1x1V62.111 15c0x1c1x1V82.667 15c0x1c1x1V82.667 18c0x1c1x1V103.222 18c0x1c1x1V103.222 15c0x1c1x1V123.778 15c0x1c1x1V123.778 18c0x1c1x1V144.333 18c0x1c1x1V144.333 15c0x1c1x1V164.889 15c0x1c1x1V164.889 18c0x1c1x1V185.444 18c0x1c1x1V185.444 15c0x1c1x1</VertList>
+        <PrimList>LineClosed</PrimList>
+    </Shape>
+    <Notes ShowOnLoad="1" Notes="parts-cabinet - carcass sheet 4 of 7: 1 parts, 1150 mm of cutting, 3 mm material.&#10;Place the 300 x 400 mm stock with its corner at X 10, Y 10; parts stay 5 mm inside its edges.&#10;Parts: Shelf r3.&#10;Layer settings (8 mm/s, 100%, kerf 0.1 mm) are a starting point - test on scrap and adjust."/>
+</LightBurnProject>
